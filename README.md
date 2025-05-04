@@ -1,5 +1,11 @@
 # Scrapper-Bot 🤖
-_A RAG x LLM-powered URL Scrapper Bot_
+
+### 📄 Project Description
+Scrapper-Bot is an advanced, AI-powered tool designed to scrape and process data from websites with ease. It leverages Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs) to provide intelligent data extraction and question-answering capabilities. The backend is built with Python, utilizing a robust AI framework, while the frontend is built with TypeScript for an interactive and user-friendly interface. The application is containerized using Docker for seamless deployment and scalability.
+
+This tool is perfect for developers, researchers, and anyone looking to automate web data extraction and analysis with the power of AI.
+
+---
 
 ![GitHub top language](https://img.shields.io/github/languages/top/VOID-001/Scrapper-Bot?color=%2334D058)
 ![GitHub license](https://img.shields.io/github/license/VOID-001/Scrapper-Bot?color=%23007EC6)

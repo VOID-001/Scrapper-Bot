@@ -8,45 +8,72 @@ _A RAG x LLM-powered URL Scrapper Bot_
 ---
 
 ## 🌟 Features
-- 🚀 **Efficient URL Scraping**: Extracts data from URLs using state-of-the-art RAG and LLM technologies.
-- 🔍 **Enhanced Data Processing**: Incorporates advanced natural language processing.
-- ⚡ **Fast and Scalable**: Built with TypeScript and Python for performance.
+- 🚀 **Efficient URL Scraping**: Extracts data from websites using RAG and LLM technologies.
+- 🤖 **AI-Powered Backend**: Processes and answers questions with advanced AI capabilities.
+- ⚡ **Fast and Scalable**: Built with TypeScript, Python, and Docker for seamless performance.
 
 ---
 
 ## 📖 Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Technologies Used](#technologies-used)
-4. [Contributing](#contributing)
-5. [License](#license)
+3. [API Endpoints](#api-endpoints)
+4. [Technologies Used](#technologies-used)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ---
 
 ## 💻 Installation
-```bash
-# Clone the repository
-git clone https://github.com/VOID-001/Scrapper-Bot.git
+### Using Docker
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/VOID-001/Scrapper-Bot.git
+   cd Scrapper-Bot
+   ```
 
-# Navigate to the project directory
-cd Scrapper-Bot
+2. Build and run the Docker container:
+   ```bash
+   docker-compose up --build
+   ```
 
-# Install dependencies
-npm install
-
-# Start the backend
-npm run start-backend
-
-# Start the frontend
-npm run start-frontend
-```
+3. Access the application via:
+   - **Frontend**: `http://localhost:3000`
+   - **Backend**: `http://localhost:8000`
 
 ---
 
 ## 🚀 Usage
-1. Access the frontend at `http://localhost:3000`.
-2. Enter the URL to scrape.
-3. View and process the extracted data.
+### Frontend
+- **URL Acceptor**: Enter a URL in the text field and submit.
+- **Question Acceptor**: Enter your question in the text field and submit.
+- **Reset Button**: Clears embeddings data.
+
+### Backend (API)
+Use the following curl commands to interact with the backend:
+
+1. **Ingest URL**:
+   ```bash
+   curl -X 'POST' \
+   'http://localhost:8000/ingest-url/?url=https%3A%2F%2Fquotes.toscrape.com%2F&max_depth=1' \
+   -H 'accept: application/json' \
+   -d ''
+   ```
+
+2. **Ask Question**:
+   ```bash
+   curl -X 'POST' \
+   'http://localhost:8000/ask-question/?question=“Imperfection is beauty...”' \
+   -H 'accept: application/json' \
+   -d ''
+   ```
+
+3. **Reset Embeddings**:
+   ```bash
+   curl -X 'DELETE' \
+   'http://localhost:8000/reset-embeddings/' \
+   -H 'accept: application/json'
+   ```
 
 ---
 
@@ -56,18 +83,8 @@ npm run start-frontend
 ![CSS](https://img.shields.io/badge/CSS-2.5%25-purple)
 
 - **Frontend**: TypeScript, CSS
-- **Backend**: Python
-- **Other**: Integration with RAG and LLM models
-
----
-
-## 🤝 Contributing
-We welcome contributions! Please follow these steps:
-1. Fork the project.
-2. Create a new branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+- **Backend**: Python, RAG, LLM
+- **Containerization**: Docker, Docker Compose
 
 ---
 
@@ -77,4 +94,4 @@ We welcome contributions! Please follow these steps:
 ---
 
 ## 💬 Contact
-Feel free to reach out via [GitHub Issues](https://github.com/VOID-001/Scrapper-Bot/issues) for support or questions.
+For support or questions, open an [issue](https://github.com/VOID-001/Scrapper-Bot/issues) in the repository.

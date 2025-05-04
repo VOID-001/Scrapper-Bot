@@ -71,11 +71,6 @@ We welcome contributions! Please follow these steps:
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## ✨ Animations & Visuals
 ![Demo Animation](https://github.com/VOID-001/Scrapper-Bot/assets/demo.gif)
 

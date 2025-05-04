@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+lxml
+openai
+psycopg2-binary
+python-dotenv
+pandas
+scikit-learn
